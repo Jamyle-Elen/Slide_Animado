@@ -22,19 +22,29 @@ body {
     padding-bottom: 70px;
 }
 
+.containerslide .slide-container .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
 .container {
     flex: 1 1 350px;
 }
 
 .container h3 {
     font-size: 35px;
-    color: bisque;
+    color: rgb(8, 54, 25);
     font-family: 'Courier Prime', monospace;
 }
 
 .container p {
     font-size: 16px;
-    color: bisque;
+    color: #fff;
     font-family: 'Courier Prime', monospace;
     width: 40%;
     height: 10%;
@@ -43,10 +53,34 @@ body {
 .container .btn {
     margin-top: 10px;
     display: inline-block;
-    background: blue;
-    color: antiquewhite;
+    background: rgb(8, 54, 25);
+    color: #fff;
     font-size: 17px;
     padding: 9px 40px;
     border-radius: 5px;
-    border: 2px solid blue;
+    border: 2px solid rgb(8, 54, 25);
+    text-decoration: none;
+}
+
+.container .btn:hover {
+    background: rgb(9, 87, 36);
+    border: 2px solid rgb(9, 87, 36);
+    transition: .3s ease;
+    color: #fff;
+}
+
+.containerslide .slide-container {
+    display: none;
+}
+
+.containerslide .slide-container-active {
+    display: block;
+}
+
+.containerslide .slide-container:nth-child(1) {
+    background: url(amazonia3.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
